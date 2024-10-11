@@ -25,10 +25,10 @@ def send_whatsapp_message(phone_number, message, hour, minute):
         print(f"An error occurred: {str(e)}")
 
 def schedule_message():
-    number = ''#enter number you mant to message
-    message = ' '#enter message
-    hour = ' '# enter hour
-    minute =' ' #enter minute
+    number = ''
+    message = ' '
+    hour = ' '
+    minute =' '
     send_whatsapp_message(number, message, hour, minute)
 
 schedule.every().day.at(" #").do(schedule_message) # instead of'#' enter hour and minute
