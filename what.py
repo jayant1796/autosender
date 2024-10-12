@@ -31,7 +31,7 @@ def schedule_message():
     minute =' '
     send_whatsapp_message(number, message, hour, minute)
 
-schedule.every().day.at(" #").do(schedule_message) # instead of'#' enter hour and minute
+schedule.every().day.at(" #").do(schedule_message) 
 
 while True:
     schedule.run_pending()
